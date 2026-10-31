@@ -1,0 +1,212 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    line-height: 1.4;
+}
+
+/* Header */
+header {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #204f70;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Grid Layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 8px;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #aaa;
+    border-radius: 9px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card h2 {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* About Me */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+}
+
+.about-content p {
+    flex: 1;
+}
+
+.profile-image {
+    width: 125px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Country Section */
+.country-title {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 15px 5px;
+}
+
+.about-card hr {
+    width: 60%;
+    margin: 0 auto 10px;
+    border: 0;
+    border-top: 1px solid #bbb;
+}
+
+.country-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+}
+
+.country-content figure {
+    flex: 0 0 140px;
+    text-align: center;
+}
+
+.country-content img {
+    width: 100%;
+    height: auto;
+}
+
+.country-content figcaption {
+    font-style: italic;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.country-content p {
+    flex: 1;
+}
+
+/* Resources */
+.resources-card ul {
+    padding: 100px 25px 25px 40px;
+}
+
+.resources-card li {
+    margin-bottom: 2px;
+}
+
+.resources-card a {
+    color: blue;
+}
+
+.resources-card a:hover {
+    color: #204f70;
+}
+
+/* Footer */
+footer {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 700px) {
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .country-content {
+        flex-direction: column;
+    }
+
+    .country-content figure {
+        width: 140px;
+    }
+
+    .resources-card ul {
+        padding: 20px 40px;
+    }
+
+}

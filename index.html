@@ -1,12 +1,147 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Learn about Jean Mahandrisoa Razafintsalama, his background, interests, and Madagascar.">
+
+    <meta name="author" content="Jean Mahandrisoa Razafintsalama">
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Jean Mahandrisoa Razafintsalama</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>Mahendri</h1>
-    
+
+    <header>
+        <span id="course-title">
+            WDD 131: Dynamic Web Fundamentals
+        </span>
+
+        <nav>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Mahandrisoa J. Razafintsalama</h1>
+
+        <div class="content-grid">
+
+            <!-- About Me Card -->
+            <section class="card about-card">
+
+                <h2>About Me</h2>
+
+                <div class="about-content">
+
+                    <p>
+                        My name is Mahandry. I was born in Antananarivo,
+                        Madagascar, and I live here with my family.
+                        I'm currently working as a data collector and
+                        moderator. I love spending time laughing with
+                        my friends, and I love learning new things.
+                    </p>
+
+                    <img src="images/profileimage.jpg"
+                         alt="Portrait of Mahandry"
+                         class="profile-image">
+
+                </div>
+
+                <h3 class="country-title">
+                    Antananarivo, Madagascar
+                </h3>
+
+                <hr>
+
+                <div class="country-content">
+
+                    <figure>
+                        <img src="images/Madagascar-Flags-Flag.webp"
+                             alt="Official flag of Madagascar">
+
+                        <figcaption>
+                            Official Flag of Madagascar
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        Madagascar is a beautiful island country
+                        located in the Indian Ocean, off the
+                        southeastern coast of Africa. Its capital
+                        city is Antananarivo. Madagascar is famous
+                        for its unique wildlife, beautiful landscapes,
+                        baobab trees, and lemurs. The official
+                        languages are Malagasy and French. It has
+                        a rich culture, delicious traditional food,
+                        and friendly people. I am proud to call
+                        Madagascar my home.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- Web Development Resources Card -->
+            <section class="card resources-card">
+
+                <h2>Web Dev Resources</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://dev.to/">Dev.to Community</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.smashingmagazine.com/">
+                            Smashing Magazine
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://css-tricks.com/">CSS Tricks</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.w3schools.com/">W3 Schools</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.udemy.com/">Udemy</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.lipsum.com/">
+                            Lorem Ipsum
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;<span id="currentyear"></span>
+            Jean Mahandrisoa Razafintsalama | Madagascar
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
 </html>

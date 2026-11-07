@@ -1,3 +1,5 @@
+/* Large screens (700px and wider): desktop-only overrides.
+   Mobile styles live in temples.css (mobile-first approach). */
 @media screen and (min-width: 700px) {
   /* Navigation: hide the hamburger, show inline links */
   #hamburger-menu {
@@ -14,6 +16,10 @@
     box-shadow: none;
   }
 
+  .nav-links a:hover {
+    text-decoration: none;
+  }
+
   /* Header: more breathing room on wide screens */
   .nav-container {
     padding: 1rem 1.5rem;
@@ -22,12 +28,12 @@
   /* Temple grid: 3 temples per row */
   .container {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    gap: 2rem;
   }
 
   /* Larger page heading */
   .main-title {
     font-size: 2.5rem;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
   }
 }
